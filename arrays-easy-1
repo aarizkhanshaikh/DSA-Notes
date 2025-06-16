@@ -1,0 +1,23 @@
+If you want to find if an array contains duplicate entries then you have 3 ways:
+
+1. Bruteforce: you compare element at index 0 with element at index 1 and do this till you reach the end of array.
+
+2. Sorting: you can sort the array first, then iterate thorugh the sorted array to check for duplicates.
+
+3. Hash Set: you can use set to store the elements of the array, while also checking duplicates sequentially in  a loop. 
+
+code for set-based solution: 
+"
+bool containsDuplicate(vector<int>& nums) {
+        unordered_set<int> NewSet;
+        
+        for (int n : nums) {
+            if (NewSet.count(n)){ 
+            return true;
+            }
+            NewSet.insert(n);
+        }
+        return false;
+    }
+};
+"
