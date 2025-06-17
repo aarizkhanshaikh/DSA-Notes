@@ -3,9 +3,9 @@ Time & Space Complexity
 
 Arrays
 
-https://leetcode.com/problems/contains-duplicate/description/
-https://leetcode.com/problems/majority-element/
-https://leetcode.com/problems/maximum-subarray/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
-https://leetcode.com/problems/two-sum/description/
-https://leetcode.com/problems/3sum/description/
+array-easy-1: https://leetcode.com/problems/contains-duplicate/description/
+array-easy-2: https://leetcode.com/problems/majority-element/
+array-: https://leetcode.com/problems/maximum-subarray/
+array-: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+array-: https://leetcode.com/problems/two-sum/description/
+array-: https://leetcode.com/problems/3sum/description/
