@@ -1,0 +1,28 @@
+If you want to find majority element that appears more than n/2 times from an array you can use three ways:
+
+1. Counting: where you iterate through all the elements in an array and store them in a hash table (number, count), and return the number with majority.
+
+2. Sorting: where you can first sort all the numbers present in the array and then perform: "array.size()/2" to get middle index of number from the array (this will work only if the majority number appears more than n/2 times)
+
+* What do you mean by n/2 times?
+* Ans: it means that if the majority number in the array crosses or is at the middle index of the array, then when can use n/2 to find its index then return that number.
+
+3. Moore's Voting Algortihm: let's assume you have an array[value (index i)] = [1 (i0), 1 (i1), 3 (i2)], then we take number at i0 as it is and increase our vote count to 1, 
+then we move to i1 and we check if same number is being repeated or not, in our case we again have 1 so increase vote count to 2, 
+now we move to i2 that is number 3, now as it is not number 1 but 3 so we decrease our vote count by -1 for number 1 (current vote count is 2), 
+we cant move ahead because array is over. Now we return majority number "1".
+
+for array [1, 1, 2, -1, 3, 3, 3]
+
+* In moore's voting algo, if vote of current majority number becomes 0 then new majority number is selected on the current index of the array (in loop) 
+
+index  number  vote
+  i0      1      1
+  i1      1      2
+  i2      2      1
+  i3     -1      0 -> 1 (As vote becomes 0 for 1, our new majority number becomes -1 as our loop is at i3)
+  i4      3      0 -> 1 (As vote becomes 0 for -1 aswell, our new majority number becomes 3 as our loop is at i4)
+  i5      3      2
+  i6      3      3
+
+so majority here is 3, we return 3.
