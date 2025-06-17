@@ -1,0 +1,11 @@
+Time & Space Complexity
+
+
+Arrays
+
+https://leetcode.com/problems/contains-duplicate/description/
+https://leetcode.com/problems/majority-element/
+https://leetcode.com/problems/maximum-subarray/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+https://leetcode.com/problems/two-sum/description/
+https://leetcode.com/problems/3sum/description/
